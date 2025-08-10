@@ -1,0 +1,181 @@
+<!-- modul3.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 3: Rekayasa Prompt Untuk Kreasi Konten</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 2rem 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 90%;
+            width: 800px;
+            text-align: center;
+            margin: 2rem auto;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+        .btn:active {
+            transform: translateY(0);
+        }
+        .header-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .content-section {
+            text-align: left;
+            margin-top: 2rem;
+        }
+        .content-section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #e0f2fe;
+        }
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: #e0f2fe;
+        }
+        .content-image {
+            border-radius: 15px;
+            margin-top: 1.5rem;
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .example-box {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-left: 5px solid #4CAF50;
+            padding: 1rem 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 8px;
+        }
+        .example-box p {
+            font-size: 1rem;
+            color: #f0f9ff;
+        }
+        /* Tombol link AI */
+        .link-jogai, .link-suno, .link-dreamina {
+            display: inline-block;
+            padding: 8px 12px;
+            margin: 5px 0;
+            background-color: #0077cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+        .link-jogai:hover, .link-suno:hover, .link-dreamina:hover {
+            background-color: #005fa3;
+        }
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 1.5rem;
+            }
+            .content-section h2 {
+                font-size: 1.75rem;
+            }
+            .content-section p {
+                font-size: 1rem;
+            }
+            .btn {
+                padding: 12px 24px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header-title">Modul 3: Rekayasa Prompt Untuk Kreasi Konten</h1>
+
+        <div class="content-section">
+            <h2>Seni Berbicara dengan AI: Ciptakan Konten Tanpa Batas! ✍️</h2>
+            <p>
+                Modul ini adalah panduan Anda untuk menjadi seorang "ahli prompt"! Kita akan belajar
+                bagaimana merancang instruksi yang tepat dan efektif agar Kecerdasan Artifisial (KA)
+                dapat menghasilkan konten kreatif sesuai keinginan Anda. Dari artikel hingga skenario,
+                potensinya tak terbatas!
+            </p>
+            <p>
+                Anda akan diajak untuk memahami dasar-dasar kreasi konten dengan KA, teknik perancangan
+                prompt yang inovatif, dan bagaimana mengintegrasikan konten yang dihasilkan AI ke dalam
+                proyek nyata. Ini adalah kolaborasi antara kecerdasan manusia dan mesin!
+            </p>
+            <img src="modul33.jpg.png" alt="Prompt Engineering" class="content-image">
+            <p class="mt-6">
+                Selain itu, kita juga akan membahas manfaat besar dari penggunaan KA dalam efisiensi
+                produksi dan inovasi konten. Namun, penting juga untuk memahami pertimbangan etika
+                dalam penggunaan KA generatif, terutama bagi para pendidik. Mari berkreasi dengan bijak!
+            </p>
+
+            <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Contoh Prompt Efektif:</h3>
+            <div class="example-box">
+                <p>
+                    1. Untuk menghasilkan cerita pendek yang menarik, alih-alih hanya menulis "Buat cerita",
+                    Anda bisa menggunakan prompt yang lebih spesifik: "Buat cerita pendek fiksi ilmiah
+                    tentang seorang astronot yang menemukan peradaban kuno di planet Mars, dengan sentuhan
+                    misteri dan akhir yang mengejutkan. Panjang sekitar 500 kata."
+                </p>
+                <p>1. Prompt untuk Menulis Artikel Tuliskan artikel sepanjang 500 kata tentang bagaimana teknologi membantu pembelajaran jarak jauh di Indonesia. Sertakan contoh nyata dan gunakan gaya bahasa formal.</p>
+                <p>2. Prompt untuk Membuat Gambar Buat ilustrasi kota futuristik di malam hari, dengan lampu neon dan kendaraan terbang. Gaya gambar seperti animasi 2D.</p>
+                <p>3. Prompt Zero Shot (langsung instruksi) Tuliskan ringkasan isi novel "Laskar Pelangi" dalam 200 kata untuk siswa SMP.</p>
+                <p>4. Prompt Few Shot (pakai contoh) Tulis puisi tentang laut. Berikut contohnya: Laut biru menari bebas Menyapu pasir, membawa damai Angin lembut meniup gelombang Senja tenggelam di pelukannya. Sekarang buat puisi dengan gaya yang sama.</p>
+                <p><a href="https://app.jogg.ai/login" target="_blank" class="link-jogai">Link JogAI</a></p>
+                <p><a href="https://suno.com/" target="_blank" class="link-suno">Link Suno AI</a></p>
+                <p><a href="https://dreamina.capcut.com/ai-tool/home" target="_blank" class="link-dreamina">Link Dreamina</a></p>
+            </div>
+
+            <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Ringkasan Modul:</h3>
+            <p>
+                Modul ini berfokus pada Rekayasa Prompt untuk Kreasi Konten menggunakan Kecerdasan Artifisial (KA). Peserta akan mempelajari dasar-dasar kreasi konten dengan KA, teknik perancangan prompt yang efektif untuk produksi konten kreatif, dan integrasi konten dalam proyek nyata. Modul ini juga membahas manfaat KA dalam efisiensi produksi dan inovasi konten, serta pertimbangan etika yang harus diperhatikan oleh pendidik dalam penggunaan KA generatif.
+            </p>
+        </div>
+
+        <a href="index.html" class="btn bg-blue-600 hover:bg-blue-700 mt-8">Kembali ke Beranda</a>
+    </div>
+</body>
+</html>

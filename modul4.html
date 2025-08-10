@@ -1,0 +1,185 @@
+<!-- modul4.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 4: Pemrograman Kecerdasan Artifisial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 2rem 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 90%;
+            width: 800px;
+            text-align: center;
+            margin: 2rem auto;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+        .btn:active {
+            transform: translateY(0);
+        }
+        .header-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .content-section {
+            text-align: left;
+            margin-top: 2rem;
+        }
+        .content-section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #e0f2fe;
+        }
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: #e0f2fe;
+        }
+        .content-image {
+            border-radius: 15px;
+            margin-top: 1.5rem;
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .example-box {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-left: 5px solid #4CAF50;
+            padding: 1rem 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 8px;
+        }
+        .example-box p {
+            font-size: 1rem;
+            color: #f0f9ff;
+        }
+        .link-box {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        .link-box a {
+            display: block;
+            color: #bbf7d0;
+            text-decoration: underline;
+            margin: 0.5rem 0;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .link-box a:hover {
+            color: #ffffff;
+        }
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 1.5rem;
+            }
+            .content-section h2 {
+                font-size: 1.75rem;
+            }
+            .content-section p {
+                font-size: 1rem;
+            }
+            .btn {
+                padding: 12px 24px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header-title">Modul 4: Pemrograman Kecerdasan Artifisial</h1>
+
+        <div class="content-section">
+            <h2>Bangun Aplikasi Cerdas Anda Sendiri! 💻</h2>
+            <p>
+                Selamat datang di jantung dunia Kecerdasan Artifisial (KA)! Modul ini akan membekali Anda
+                dengan pengetahuan dan keterampilan untuk memprogram aplikasi cerdas. Anda akan memahami
+                konsep dasar pemrograman KA dan bagaimana menerapkan <em>library</em> populer untuk mewujudkan ide-ide
+                inovatif Anda.
+            </p>
+            <p>
+                Kita akan menjelajahi berbagai pendekatan AI seperti <em>Machine Learning</em> (ML), <em>Deep Learning</em>,
+                <em>Natural Language Processing</em> (NLP), hingga <em>Large Language Model</em> (LLM). Bayangkan, Anda akan
+                mampu membuat sistem yang bisa belajar dari data, mengenali pola, dan bahkan memahami bahasa manusia!
+            </p>
+            <img src="gambarmodul4.png" alt="Pemrograman AI" class="content-image">
+            <p class="mt-6">
+                Modul ini juga akan memperkenalkan Anda pada konsep-konsep mutakhir seperti <em>Edge AI</em> untuk
+                pemrosesan lokal, <em>Emotion AI</em> untuk interaksi yang lebih empatik, dan <em>Reinforcement Learning</em>
+                yang memungkinkan sistem belajar dari pengalaman. Siap untuk menjadi pengembang AI masa depan?
+            </p>
+
+            <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Contoh Proyek Pemrograman AI:</h3>
+            <div class="example-box">
+                <p>
+                    Membuat sistem rekomendasi film sederhana. Dengan menggunakan algoritma <em>Machine Learning</em>,
+                    program dapat menganalisis preferensi tontonan pengguna dan merekomendasikan film lain
+                    yang mungkin disukai berdasarkan pola dari data pengguna lain.
+                </p>
+            </div>
+
+            <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Ringkasan Modul:</h3>
+            <p>
+                Modul ini berfokus pada Pemrograman Kecerdasan Artifisial (KA). Peserta akan mempelajari konsep dasar pemrograman KA, cara menerapkan <em>library</em> KA populer untuk membangun aplikasi, serta memahami konsep, arsitektur, dan aplikasi <em>Large Language Model</em> (LLM). Modul ini juga mencakup berbagai pendekatan inovatif seperti <em>Edge AI</em>, <em>Emotion AI</em>, dan <em>Reinforcement Learning</em>, serta membahas <em>Machine Learning</em>, <em>Deep Learning</em>, dan <em>Natural Language Processing</em> (NLP) sebagai fondasi KA. Selain itu, dijelaskan pula penggunaan bahasa pemrograman seperti JavaScript (dengan Node.js) dan bahasa lainnya untuk integrasi LLM.
+            </p>
+
+            <h3 class="text-xl font-semibold mt-8 mb-4 text-green-200">Contoh Penerapan & Sumber Daya:</h3>
+            <div class="link-box">
+                <a href="https://2022.codeavour.org/download-pictoblox/" target="_blank">🔹 Pictoblox - Buat Chatbot AI</a>
+                <a href="https://colab.research.google.com/" target="_blank">🔹 Google Colab - Jalankan Kode AI di Cloud</a>
+                <a href="https://teachablemachine.withgoogle.com/" target="_blank">🔹 Teachable Machine - Latih Model AI Tanpa Kode</a>
+                <a href="https://code.visualstudio.com/download" target="_blank">🔹 VS Code - Editor Kode</a>
+                <a href="https://www.python.org/downloads/" target="_blank">🔹 Python - Bahasa Pemrograman AI Populer</a>
+            </div>
+        </div>
+
+        <a href="index.html" class="btn bg-blue-600 hover:bg-blue-700 mt-8">Kembali ke Beranda</a>
+    </div>
+</body>
+</html>

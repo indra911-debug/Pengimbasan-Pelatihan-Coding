@@ -1,0 +1,163 @@
+<!-- modul2.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 2: Pengoperasian, Pengaplikasian, & Kolaborasi Perangkat KA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 2rem 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 90%;
+            width: 800px;
+            text-align: center;
+            margin: 2rem auto;
+        }
+        .btn {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+        .btn:active {
+            transform: translateY(0);
+        }
+        .header-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .content-section {
+            text-align: left;
+            margin-top: 2rem;
+        }
+        .content-section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #e0f2fe;
+        }
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: #e0f2fe;
+        }
+        .content-image {
+            border-radius: 15px;
+            margin-top: 1.5rem;
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .example-box {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-left: 5px solid #4CAF50;
+            padding: 1rem 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 8px;
+        }
+        .example-box p {
+            font-size: 1rem;
+            color: #f0f9ff;
+        }
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 1.5rem;
+            }
+            .content-section h2 {
+                font-size: 1.75rem;
+            }
+            .content-section p {
+                font-size: 1rem;
+            }
+            .btn {
+                padding: 12px 24px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header-title">Modul 2: Pengoperasian, Pengaplikasian, & Kolaborasi Perangkat Kecerdasan Artifisial</h1>
+
+        <div class="content-section">
+            <h2>Kuasai Dunia AI di Ujung Jari Anda! ✨</h2>
+            <p>
+                Pernahkah Anda bertanya-tanya bagaimana Kecerdasan Artifisial (KA) bekerja di balik layar?
+                Modul ini akan membimbing Anda melalui pengoperasian, pengaplikasian, dan bahkan kolaborasi
+                dengan berbagai perangkat KA yang ada di sekitar kita. Dari asisten virtual hingga sistem
+                rekomendasi, AI ada di mana-mana!
+            </p>
+            <p>
+                Kita akan menyelami perbedaan antara mesin cerdas dan non-cerdas, memahami bagaimana AI
+                membuat keputusan, dan melihat bagaimana AI dimanfaatkan dalam produksi dan pengeditan video
+                yang semakin canggih. Siap untuk menjadi kreator masa depan?
+            </p>
+            <img src="gambarmodul2.jpg" alt="Kolaborasi Manusia AI" class="content-image">
+            <p class="mt-6">
+                Lebih dari itu, modul ini juga akan membuka mata Anda terhadap peluang karir yang melimpah
+                di bidang AI. Kolaborasi antara manusia dan AI, khususnya dalam desain kreatif, telah terbukti
+                menghasilkan karya-karya yang menakjubkan. Mari berkolaborasi, berinovasi, dan ciptakan
+                sesuatu yang luar biasa!
+            </p>
+
+            <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Contoh Aplikasi:</h3>
+            <div class="example-box">
+                <p>
+                    1. Aplikasi penerjemah bahasa seperti Google Translate adalah contoh nyata pengaplikasian AI.
+                    Dengan AI, aplikasi ini dapat memahami konteks kalimat dan menerjemahkannya secara akurat
+                    antar berbagai bahasa, bahkan dalam percakapan _real-time_.
+                    <p>2. Seorang pasien memanfaatkan chatbot medis AI untuk konsultasi awal tentang gejala ringan sebelum ke rumah sakit menggunakan Ada Health atau Halodoc Chatbot</p>
+                    <p>3. Siswa ingin membuat puisi bertema "kehidupan digital". Ia memberi perintah ke ChatGPT, lalu mengedit hasilnya agar sesuai dengan gaya bahasanya sendiri.</p>
+                    
+                </p>
+            </div>
+
+            <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Ringkasan Modul:</h3>
+            <p>
+                Modul ini membahas pengoperasian, pengaplikasian, dan kolaborasi dengan perangkat Kecerdasan Artifisial (KA). Materi mencakup perbedaan antara mesin cerdas dan non-cerdas, pemanfaatan KA dalam produksi dan pengeditan video, serta peluang karir di bidang KA. Modul ini juga menyoroti pentingnya kolaborasi antara manusia dan KA, khususnya dalam desain kreatif, untuk menghasilkan karya inovatif.
+            </p>
+        </div>
+
+        <a href="index.html" class="btn bg-blue-600 hover:bg-blue-700 mt-8">Kembali ke Beranda</a>
+    </div>
+</body>
+</html>
