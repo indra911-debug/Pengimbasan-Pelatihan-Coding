@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modul 2: Pengoperasian, Pengaplikasian, & Kolaborasi Perangkat KA</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,7 +32,7 @@
             margin: 2rem auto;
         }
         .btn {
-            background-color: #4CAF50; /* Green */
+            background-color: #4CAF50;
             color: white;
             padding: 15px 30px;
             text-align: center;
@@ -89,10 +90,24 @@
             padding: 1rem 1.5rem;
             margin-top: 1.5rem;
             border-radius: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            transition: transform 0.2s ease;
+        }
+        .example-box:hover {
+            transform: translateY(-3px);
         }
         .example-box p {
             font-size: 1rem;
             color: #f0f9ff;
+            margin: 0;
+        }
+        .icon {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            color: #4CAF50;
         }
         @media (max-width: 768px) {
             .header-title {
@@ -141,23 +156,76 @@
 
             <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Contoh Aplikasi:</h3>
             <div class="example-box">
+                <i data-lucide="languages" class="icon"></i>
                 <p>
-                    1. Aplikasi penerjemah bahasa seperti Google Translate adalah contoh nyata pengaplikasian AI.
+                    Aplikasi penerjemah bahasa seperti Google Translate adalah contoh nyata pengaplikasian AI.
                     Dengan AI, aplikasi ini dapat memahami konteks kalimat dan menerjemahkannya secara akurat
-                    antar berbagai bahasa, bahkan dalam percakapan _real-time_.
-                    <p>2. Seorang pasien memanfaatkan chatbot medis AI untuk konsultasi awal tentang gejala ringan sebelum ke rumah sakit menggunakan Ada Health atau Halodoc Chatbot</p>
-                    <p>3. Siswa ingin membuat puisi bertema "kehidupan digital". Ia memberi perintah ke ChatGPT, lalu mengedit hasilnya agar sesuai dengan gaya bahasanya sendiri.</p>
-                    
+                    antar berbagai bahasa, bahkan dalam percakapan <em>real-time</em>.
                 </p>
+            </div>
+            <div class="example-box">
+                <i data-lucide="stethoscope" class="icon"></i>
+                <p>Seorang pasien memanfaatkan chatbot medis AI untuk konsultasi awal tentang gejala ringan sebelum ke rumah sakit menggunakan Ada Health atau Halodoc Chatbot.</p>
+            </div>
+            <div class="example-box">
+                <i data-lucide="edit-3" class="icon"></i>
+                <p>Siswa ingin membuat puisi bertema "kehidupan digital". Ia memberi perintah ke ChatGPT, lalu mengedit hasilnya agar sesuai dengan gaya bahasanya sendiri.</p>
             </div>
 
             <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Ringkasan Modul:</h3>
             <p>
                 Modul ini membahas pengoperasian, pengaplikasian, dan kolaborasi dengan perangkat Kecerdasan Artifisial (KA). Materi mencakup perbedaan antara mesin cerdas dan non-cerdas, pemanfaatan KA dalam produksi dan pengeditan video, serta peluang karir di bidang KA. Modul ini juga menyoroti pentingnya kolaborasi antara manusia dan KA, khususnya dalam desain kreatif, untuk menghasilkan karya inovatif.
             </p>
+
+            <!-- Peluang Karier AI -->
+            <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Peluang Karier di Bidang AI</h3>
+            <p>
+                Di era digital yang serba cepat, kecerdasan buatan (AI) telah menjadi pendorong utama inovasi.
+                Ini membuka banyak sekali peluang karier yang menarik di berbagai sektor, tidak hanya di perusahaan teknologi.
+            </p>
+
+            <div class="example-box">
+                <i data-lucide="cpu" class="icon"></i>
+                <p><strong>Machine Learning Engineer</strong> – Merancang, membangun, dan mengimplementasikan algoritma yang memungkinkan mesin belajar dari data.mereka belajar untuk menciptakan sistem yang bisa memprediksi, mengklasifikasi, atau mengotomatiskan tugas.</p>
+            </div>
+            <div class="example-box">
+                <i data-lucide="bar-chart-3" class="icon"></i>
+                <p><strong>Data Scientist</strong> – Menganalisis data besar untuk menemukan pola dan membuat prediksi penting bagi bisnis.</p>
+            </div>
+            <div class="example-box">
+                <i data-lucide="settings" class="icon"></i>
+                <p><strong>AI Engineer</strong> – Mengintegrasikan teknologi AI ke produk atau sistem agar bekerja efisien. mereka berkolaborasi dengan tim pengembang dan ilmuan data untuk memastikan bahwa teknologi AI dapat berfungsi dengan baik dan efisien  dalam aplikasi sehari - hari</p>
+            </div>
+            <div class="example-box">
+                <i data-lucide="flask-conical" class="icon"></i>
+                <p><strong>AI Research Scientist</strong> – Meneliti dan menciptakan algoritma AI baru di bidang R&D atau universitas.</p>
+            </div>
+            <div class="example-box">
+                <i data-lucide="camera" class="icon"></i>
+                <p><strong>Computer Vision Engineer</strong> – Mengembangkan teknologi pengenalan gambar dan video, seperti mobil otonom, hingga analisis gambar medis.</p>
+            </div>
+
+            <h4 class="text-lg font-semibold mt-6 mb-2 text-blue-100">Karier AI Lainnya:</h4>
+            <ul class="list-disc list-inside text-blue-50 mb-4">
+                <li>📝 <strong>Prompt Engineer</strong> – Merancang instruksi tepat untuk AI generatif.</li>
+                <li>⚖️ <strong>AI Ethicist</strong> – Mengawasi etika dan keadilan penggunaan AI.</li>
+                <li>🤖 <strong>Robotics Engineer</strong> – Menggabungkan AI dengan robotika untuk aplikasi praktis.</li>
+                <li>📊 <strong>BI Developer</strong> – Memanfaatkan AI untuk analisis data strategis.</li>
+            </ul>
+
+            <h4 class="text-lg font-semibold mt-6 mb-2 text-blue-100">Gaji & Prospek di Indonesia</h4>
+            <p>
+                💰 Tingkat pemula: <strong>Rp 8–15 juta</strong> / bulan.  
+                💼 Berpengalaman 5+ tahun: <strong>Rp 25–50 juta</strong> / bulan.  
+                Permintaan tenaga kerja AI terus meningkat di berbagai sektor.
+            </p>
         </div>
 
         <a href="index.html" class="btn bg-blue-600 hover:bg-blue-700 mt-8">Kembali ke Beranda</a>
     </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
