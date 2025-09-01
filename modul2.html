@@ -1,6 +1,8 @@
 <!-- modul2.html -->
+
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,90 +47,44 @@
             transition: background-color 0.3s ease, transform 0.2s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .btn:hover {
-            background-color: #45a049;
-            transform: translateY(-2px);
-        }
-        .btn:active {
-            transform: translateY(0);
-        }
+        .btn:hover { background-color: #45a049; transform: translateY(-2px); }
+        .btn:active { transform: translateY(0); }
         .header-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: #ffffff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem;
+            color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
-        .content-section {
-            text-align: left;
-            margin-top: 2rem;
-        }
+        .content-section { text-align: left; margin-top: 2rem; }
         .content-section h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: #e0f2fe;
+            font-size: 2rem; font-weight: 600; margin-bottom: 1rem; color: #e0f2fe;
         }
         .content-section p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 1rem;
-            color: #e0f2fe;
+            font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; color: #e0f2fe;
         }
         .content-image {
-            border-radius: 15px;
-            margin-top: 1.5rem;
-            width: 100%;
-            height: auto;
-            max-height: 400px;
-            object-fit: cover;
+            border-radius: 15px; margin-top: 1.5rem; width: 100%; height: auto;
+            max-height: 400px; object-fit: cover;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         .example-box {
             background-color: rgba(255, 255, 255, 0.2);
             border-left: 5px solid #4CAF50;
-            padding: 1rem 1.5rem;
-            margin-top: 1.5rem;
-            border-radius: 8px;
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
+            padding: 1rem 1.5rem; margin-top: 1.5rem;
+            border-radius: 8px; display: flex; align-items: flex-start; gap: 12px;
             transition: transform 0.2s ease;
         }
-        .example-box:hover {
-            transform: translateY(-3px);
-        }
-        .example-box p {
-            font-size: 1rem;
-            color: #f0f9ff;
-            margin: 0;
-        }
-        .icon {
-            flex-shrink: 0;
-            width: 28px;
-            height: 28px;
-            color: #4CAF50;
-        }
+        .example-box:hover { transform: translateY(-3px); }
+        .example-box p { font-size: 1rem; color: #f0f9ff; margin: 0; }
+        .icon { flex-shrink: 0; width: 28px; height: 28px; color: #4CAF50; }
         @media (max-width: 768px) {
-            .header-title {
-                font-size: 2rem;
-            }
-            .container {
-                padding: 1.5rem;
-            }
-            .content-section h2 {
-                font-size: 1.75rem;
-            }
-            .content-section p {
-                font-size: 1rem;
-            }
-            .btn {
-                padding: 12px 24px;
-                font-size: 16px;
-            }
+            .header-title { font-size: 2rem; }
+            .container { padding: 1.5rem; }
+            .content-section h2 { font-size: 1.75rem; }
+            .content-section p { font-size: 1rem; }
+            .btn { padding: 12px 24px; font-size: 16px; }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1 class="header-title">Modul 2: Pengoperasian, Pengaplikasian, & Kolaborasi Perangkat Kecerdasan Artifisial</h1>
@@ -147,77 +103,119 @@
                 yang semakin canggih. Siap untuk menjadi kreator masa depan?
             </p>
             <img src="gambarmodul2.jpg" alt="Kolaborasi Manusia AI" class="content-image">
-            <p class="mt-6">
-                Lebih dari itu, modul ini juga akan membuka mata Anda terhadap peluang karir yang melimpah
-                di bidang AI. Kolaborasi antara manusia dan AI, khususnya dalam desain kreatif, telah terbukti
-                menghasilkan karya-karya yang menakjubkan. Mari berkolaborasi, berinovasi, dan ciptakan
-                sesuatu yang luar biasa!
+
+            <!-- Materi Tambahan: Mesin AI Cerdas & Non-Cerdas -->
+            <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Mesin AI: Cerdas vs Non-Cerdas</h3>
+            <p>
+                Mesin AI (kecerdasan buatan) dapat dibagi menjadi dua kategori besar: <strong>cerdas</strong> dan <strong>non-cerdas</strong>.
+                Perbedaan utama terletak pada kemampuannya untuk belajar, beradaptasi, dan membuat keputusan tanpa diprogram secara eksplisit.
             </p>
 
+            <h4 class="text-lg font-semibold mt-6 mb-2 text-blue-100">Mesin AI Non-Cerdas (Dumb AI)</h4>
+            <p>
+                Disebut juga "Narrow AI" atau "Weak AI". Hanya dirancang untuk melakukan satu tugas spesifik
+                dengan aturan tertentu. Tidak bisa belajar atau beradaptasi di luar programnya.
+            </p>
+            <ul class="list-disc list-inside text-blue-50 mb-4">
+                <li>📧 <strong>Filter spam email</strong>: hanya memblokir kata tertentu yang sudah ditentukan.</li>
+                <li>♟️ <strong>Sistem catur awal</strong>: memilih langkah dari database, tanpa memahami strategi lawan.</li>
+            </ul>
+
+            <h4 class="text-lg font-semibold mt-6 mb-2 text-blue-100">Mesin AI Cerdas (Smart AI)</h4>
+            <p>
+                Disebut juga "General AI". Memiliki kemampuan belajar dari data, mengenali pola, dan membuat keputusan otonom.
+                Mereka bisa memodifikasi aturan atau menciptakan strategi baru berdasarkan pengalaman.
+            </p>
+            <ul class="list-disc list-inside text-blue-50 mb-4">
+                <li>🎙️ <strong>Asisten virtual</strong> (Siri, Google Assistant) – belajar dari interaksi pengguna.</li>
+                <li>🎬 <strong>Rekomendasi Netflix/Spotify</strong> – memprediksi konten baru dari riwayat tontonan/pengguna lain.</li>
+                <li>🚗 <strong>Mobil swakemudi</strong> – mengambil keputusan real-time dari sensor & kondisi lalu lintas.</li>
+            </ul>
+
+            <!-- Contoh Aplikasi -->
             <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Contoh Aplikasi:</h3>
             <div class="example-box">
                 <i data-lucide="languages" class="icon"></i>
-                <p>
-                    Aplikasi penerjemah bahasa seperti Google Translate adalah contoh nyata pengaplikasian AI.
-                    Dengan AI, aplikasi ini dapat memahami konteks kalimat dan menerjemahkannya secara akurat
-                    antar berbagai bahasa, bahkan dalam percakapan <em>real-time</em>.
-                </p>
+                <p>Aplikasi penerjemah bahasa seperti Google Translate memanfaatkan AI untuk memahami konteks kalimat dan menerjemahkan secara akurat dalam <em>real-time</em>.</p>
             </div>
             <div class="example-box">
                 <i data-lucide="stethoscope" class="icon"></i>
-                <p>Seorang pasien memanfaatkan chatbot medis AI untuk konsultasi awal tentang gejala ringan sebelum ke rumah sakit menggunakan Ada Health atau Halodoc Chatbot.</p>
+                <p>Chatbot medis AI seperti Ada Health atau Halodoc membantu konsultasi awal pasien sebelum ke rumah sakit.</p>
             </div>
             <div class="example-box">
                 <i data-lucide="edit-3" class="icon"></i>
-                <p>Siswa ingin membuat puisi bertema "kehidupan digital". Ia memberi perintah ke ChatGPT, lalu mengedit hasilnya agar sesuai dengan gaya bahasanya sendiri.</p>
+                <p>Siswa dapat membuat puisi bertema "kehidupan digital" dengan bantuan ChatGPT lalu mengedit sesuai gaya bahasanya.</p>
             </div>
 
-            <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Ringkasan Modul:</h3>
+            <!-- Materi Tambahan: Bagaimana AI Membuat Keputusan -->
+            <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Bagaimana AI Membuat Keputusan?</h3>
             <p>
-                Modul ini membahas pengoperasian, pengaplikasian, dan kolaborasi dengan perangkat Kecerdasan Artifisial (KA). Materi mencakup perbedaan antara mesin cerdas dan non-cerdas, pemanfaatan KA dalam produksi dan pengeditan video, serta peluang karir di bidang KA. Modul ini juga menyoroti pentingnya kolaborasi antara manusia dan KA, khususnya dalam desain kreatif, untuk menghasilkan karya inovatif.
+                AI membuat keputusan berdasarkan <strong>data</strong>, <strong>algoritma matematis</strong>, dan <strong>model statistik</strong>, bukan emosi atau intuisi.
             </p>
+            <ol class="list-decimal list-inside text-blue-50 mb-4">
+                <li>
+                    <strong>Pengumpulan & Pra-pemrosesan Data</strong> – AI mengumpulkan data dari berbagai sumber, seperti internet, sensor, basis data, atau riwayat interaksi pengguna.
+                </li>
+                <li>
+                    <strong>Pelatihan Model</strong> – algoritma (misalnya Neural Network) dilatih menggunakan data tersebut untuk mengenali pola dan membuat prediksi.
+                </li>
+                <li>
+                    <strong>Pembuatan Keputusan</strong> – AI memberikan hasil berbasis <em>probabilitas</em>, bukan jawaban mutlak. 
+                    Misalnya, sistem deteksi spam memberi label “98% kemungkinan spam”. 
+                    Contoh lain, algoritma rekomendasi Netflix menganalisis riwayat tontonan Anda dan membandingkannya dengan pola dari jutaan pengguna lain untuk memberikan saran film yang relevan.
+                </li>
+                <li>
+                    <strong>Pembelajaran Berkelanjutan</strong> – AI terus memperbaiki modelnya berdasarkan umpan balik pengguna atau data baru, sehingga keputusannya semakin akurat seiring waktu.
+                </li>
+            </ol>
 
-            <!-- Peluang Karier AI -->
+            <!-- Peluang Karier -->
             <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-100">Peluang Karier di Bidang AI</h3>
             <p>
-                Di era digital yang serba cepat, kecerdasan buatan (AI) telah menjadi pendorong utama inovasi.
-                Ini membuka banyak sekali peluang karier yang menarik di berbagai sektor, tidak hanya di perusahaan teknologi.
+                AI membuka banyak peluang karier di berbagai sektor, dari teknologi hingga bisnis kreatif.
             </p>
-
             <div class="example-box">
                 <i data-lucide="cpu" class="icon"></i>
-                <p><strong>Machine Learning Engineer</strong> – Merancang, membangun, dan mengimplementasikan algoritma yang memungkinkan mesin belajar dari data.mereka belajar untuk menciptakan sistem yang bisa memprediksi, mengklasifikasi, atau mengotomatiskan tugas.</p>
+                <p><strong>Machine Learning Engineer</strong> – membangun algoritma agar mesin bisa belajar dari data. Contoh: Seorang ML Engineer di sebuah perusahaan e-commerce membangun algoritma sistem rekomendasi produk. Mereka melatih model menggunakan data historis perilaku pelanggan (misalnya, riwayat pembelian, klik, dan pencarian) untuk memprediksi produk apa yang paling mungkin dibeli oleh pelanggan lain, kemudian mengintegrasikan model tersebut ke dalam situs web.</p>
             </div>
             <div class="example-box">
                 <i data-lucide="bar-chart-3" class="icon"></i>
-                <p><strong>Data Scientist</strong> – Menganalisis data besar untuk menemukan pola dan membuat prediksi penting bagi bisnis.</p>
+                <p><strong>Data Scientist</strong> – menganalisis data besar untuk pola & prediksi bisnis. Contoh: Seorang Data Scientist di sebuah perusahaan telekomunikasi menganalisis data penggunaan jaringan. Mereka menemukan pola bahwa pelanggan yang mengalami penurunan kualitas panggilan di area tertentu memiliki probabilitas tinggi untuk berpindah ke provider lain. Berdasarkan temuan ini, mereka menyarankan perusahaan untuk meningkatkan infrastruktur di area tersebut guna mengurangi tingkat churn (pelanggan yang berhenti berlangganan).</p>
             </div>
             <div class="example-box">
                 <i data-lucide="settings" class="icon"></i>
-                <p><strong>AI Engineer</strong> – Mengintegrasikan teknologi AI ke produk atau sistem agar bekerja efisien. mereka berkolaborasi dengan tim pengembang dan ilmuan data untuk memastikan bahwa teknologi AI dapat berfungsi dengan baik dan efisien  dalam aplikasi sehari - hari</p>
+                <p><strong>AI Engineer</strong> – mengintegrasikan teknologi AI ke produk & sistem. Contoh: Sebuah perusahaan memiliki model AI yang bisa mendeteksi cacat pada produk manufaktur. Tugas seorang AI Engineer adalah mengambil model yang telah dilatih tersebut dan mengintegrasikannya ke dalam jalur perakitan robotik. Mereka memastikan model dapat menerima gambar dari kamera, memprosesnya secara real-time, dan mengirimkan sinyal ke robot untuk memisahkan produk yang cacat.</p>
             </div>
             <div class="example-box">
                 <i data-lucide="flask-conical" class="icon"></i>
-                <p><strong>AI Research Scientist</strong> – Meneliti dan menciptakan algoritma AI baru di bidang R&D atau universitas.</p>
+                <p><strong>AI Research Scientist</strong> – meneliti algoritma baru di bidang R&D atau universitas. Contoh: Seorang AI Research Scientist di sebuah universitas sedang meneliti cara membuat model bahasa yang lebih efisien dan membutuhkan lebih sedikit data untuk dilatih. Tujuan mereka bukan untuk membuat produk komersial, melainkan untuk memublikasikan temuan mereka di jurnal ilmiah, yang nantinya dapat digunakan oleh komunitas AI untuk mengembangkan teknologi baru.</p>
             </div>
             <div class="example-box">
                 <i data-lucide="camera" class="icon"></i>
-                <p><strong>Computer Vision Engineer</strong> – Mengembangkan teknologi pengenalan gambar dan video, seperti mobil otonom, hingga analisis gambar medis.</p>
+                <p><strong>Computer Vision Engineer</strong> – membangun sistem pengenalan gambar & video, dari medis hingga mobil otonom. Contoh: Seorang Computer Vision Engineer bekerja di sebuah startup yang mengembangkan mobil otonom. Mereka membangun algoritma yang menganalisis live-feed dari kamera mobil untuk mengidentifikasi objek seperti pejalan kaki, rambu lalu lintas, dan kendaraan lain. Model ini kemudian memberikan informasi kepada sistem kontrol mobil untuk membuat keputusan real-time tentang pengereman atau akselerasi.</p>
             </div>
 
             <h4 class="text-lg font-semibold mt-6 mb-2 text-blue-100">Karier AI Lainnya:</h4>
             <ul class="list-disc list-inside text-blue-50 mb-4">
-                <li>📝 <strong>Prompt Engineer</strong> – Merancang instruksi tepat untuk AI generatif.</li>
-                <li>⚖️ <strong>AI Ethicist</strong> – Mengawasi etika dan keadilan penggunaan AI.</li>
-                <li>🤖 <strong>Robotics Engineer</strong> – Menggabungkan AI dengan robotika untuk aplikasi praktis.</li>
-                <li>📊 <strong>BI Developer</strong> – Memanfaatkan AI untuk analisis data strategis.</li>
+                <li>📝 <strong>Prompt Engineer</strong> – merancang instruksi untuk AI generatif.</li>
+                <li>⚖️ <strong>AI Ethicist</strong> – mengawasi etika penggunaan AI.</li>
+                <li>🤖 <strong>Robotics Engineer</strong> – menggabungkan AI dengan robotika.</li>
+                <li>📊 <strong>BI Developer</strong> – memanfaatkan AI untuk analisis data strategis.</li>
             </ul>
 
             <h4 class="text-lg font-semibold mt-6 mb-2 text-blue-100">Gaji & Prospek di Indonesia</h4>
             <p>
-                💰 Tingkat pemula: <strong>Rp 8–15 juta</strong> / bulan.  
-                💼 Berpengalaman 5+ tahun: <strong>Rp 25–50 juta</strong> / bulan.  
+                💰 Tingkat pemula: <strong>Rp 8–15 juta</strong> / bulan.<br>
+                💼 Berpengalaman 5+ tahun: <strong>Rp 25–50 juta</strong> / bulan.<br>
                 Permintaan tenaga kerja AI terus meningkat di berbagai sektor.
+            </p>
+
+            <!-- Ringkasan Modul (Dipindah ke Bawah) -->
+            <h3 class="text-xl font-semibold mt-12 mb-4 text-blue-100">Ringkasan Modul</h3>
+            <p>
+                Modul ini membahas pengoperasian, pengaplikasian, dan kolaborasi dengan perangkat Kecerdasan Artifisial (KA).
+                Materi mencakup perbedaan mesin cerdas dan non-cerdas, cara AI membuat keputusan, pemanfaatan KA dalam produksi video,
+                serta peluang karir di bidang KA. Kolaborasi manusia & AI menghasilkan karya inovatif.
             </p>
         </div>
 
